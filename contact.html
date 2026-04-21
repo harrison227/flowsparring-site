@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact & Book — Flow Sparring</title>
+  <meta name="description" content="Book your first session at Flow Sparring Leichhardt. Norton Plaza, Level 1, Suite 108, 55 Norton Street." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand"><img class="nav-brand-mark" src="assets/logo.svg" alt="" /><span>Flow Sparring</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">Method</a>
+        <a href="classes.html">Classes</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-cta-wrap"><a href="#booking" class="btn btn-primary nav-cta">Book Session</a></div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Contact · Book</span>
+      <h1 class="display-xl">Come find us.<br/>Above Norton Plaza.</h1>
+      <p class="lead">
+        Book your first session, ask a question, or just come say hi. We answer every message
+        within 24 hours — usually much less.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="section" id="booking">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="contact-info reveal">
+
+          <div class="contact-info-block">
+            <span class="eyebrow">Visit</span>
+            <h3 style="margin-top: 0.75rem;">The Gym</h3>
+            <p>
+              Norton Plaza, Level 1, Suite 108<br/>
+              55 Norton Street<br/>
+              Leichhardt NSW 2040
+            </p>
+            <p style="color: var(--fg-subtle); font-size: 0.88rem; margin-top: 0.5rem;">Lift access · Close to light rail, bus & Norton Plaza parking</p>
+          </div>
+
+          <div class="contact-info-block">
+            <span class="eyebrow">Call</span>
+            <h3 style="margin-top: 0.75rem;">Phone</h3>
+            <a href="tel:+61456053672" style="font-size: 1.15rem; color: var(--fg);">0456 053 672</a>
+            <p style="color: var(--fg-subtle); font-size: 0.88rem; margin-top: 0.5rem;">Fastest way to lock a booking.</p>
+          </div>
+
+          <div class="contact-info-block">
+            <span class="eyebrow">Email</span>
+            <h3 style="margin-top: 0.75rem;">Write</h3>
+            <a href="mailto:admin@flowsparring.com" style="font-size: 1.05rem; color: var(--fg);">admin@flowsparring.com</a>
+            <p style="color: var(--fg-subtle); font-size: 0.88rem; margin-top: 0.5rem;">For longer questions and group bookings.</p>
+          </div>
+
+          <div class="contact-info-block">
+            <span class="eyebrow">Social</span>
+            <h3 style="margin-top: 0.75rem;">Follow</h3>
+            <div style="display: flex; gap: 0.75rem; margin-top: 0.75rem;">
+              <a href="https://instagram.com" class="btn btn-ghost" style="padding: 0.7rem 1.2rem; font-size: 0.8rem;" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://facebook.com" class="btn btn-ghost" style="padding: 0.7rem 1.2rem; font-size: 0.8rem;" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <span class="eyebrow">Hours</span>
+            <h3 style="margin-top: 0.75rem;">When We're Open</h3>
+            <p style="line-height: 1.9;">
+              <strong style="color: var(--fg);">Mon–Fri</strong> 6:15 AM — 8:00 PM<br/>
+              <strong style="color: var(--fg);">Saturday</strong> 8:00 AM — 4:00 PM<br/>
+              <strong style="color: var(--fg);">Sunday</strong> Closed
+            </p>
+          </div>
+
+        </div>
+
+        <!-- FORM -->
+        <div class="reveal">
+          <form class="form contact-form" novalidate>
+            <span class="eyebrow">Booking Enquiry</span>
+            <h2 class="display-md" style="margin: 1rem 0 2rem;">Book your first session.</h2>
+
+            <div class="form-row two-col">
+              <div>
+                <label for="name">Your Name</label>
+                <input id="name" type="text" name="name" required autocomplete="name" />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" name="phone" required autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required autocomplete="email" />
+            </div>
+
+            <div class="form-row two-col">
+              <div>
+                <label for="program">Program</label>
+                <select id="program" name="program" required>
+                  <option value="">Pick a program…</option>
+                  <option value="open-mat">Open Mat Boxing</option>
+                  <option value="womens">Female Mornings</option>
+                  <option value="saturday">Saturday Sessions</option>
+                  <option value="kids">Kids Class</option>
+                  <option value="unsure">Not sure — help me pick</option>
+                </select>
+              </div>
+              <div>
+                <label for="experience">Experience</label>
+                <select id="experience" name="experience">
+                  <option value="none">Brand new to boxing</option>
+                  <option value="some">Some experience</option>
+                  <option value="regular">Trained regularly</option>
+                  <option value="competitive">Competition experience</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Anything else we should know?</label>
+              <textarea id="message" name="message" placeholder="Preferred day/time, goals, injuries, questions…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-arrow" style="width: 100%; justify-content: center;">Send Enquiry</button>
+            <div class="form-success" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section-tight" style="padding-bottom: var(--section-pad);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-head-text">
+          <span class="eyebrow">Find Us</span>
+          <h2 class="display-lg">Inner-west,<br/>above the plaza.</h2>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps?q=55+Norton+St,+Leichhardt+NSW+2040&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Flow Sparring location map"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img class="nav-brand-mark" src="assets/logo.svg" alt="" /><span>Flow Sparring</span></div>
+          <p class="footer-tagline">A martial arts gym in Leichhardt providing a unique opportunity to learn combat sports without taking the damage.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="mailto:admin@flowsparring.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          </div>
+        </div>
+        <div><h4>Explore</h4><ul><li><a href="about.html">The Flow Method</a></li><li><a href="classes.html">Classes</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="coaches.html">Coaches</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Programs</h4><ul><li><a href="classes.html#open-mat">Open Mat Boxing</a></li><li><a href="classes.html#womens">Female Mornings</a></li><li><a href="classes.html#saturday">Saturday Sessions</a></li><li><a href="classes.html#kids">Kids Classes</a></li></ul></div>
+        <div><h4>Visit</h4><ul><li><a href="contact.html">Norton Plaza, Level 1<br/>Suite 108, 55 Norton St<br/>Leichhardt NSW 2040</a></li><li><a href="tel:+61456053672">0456 053 672</a></li><li><a href="mailto:admin@flowsparring.com">admin@flowsparring.com</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><div>© <span data-year>2026</span> Flow Sparring. All rights reserved.</div><div>Crafted for the sweet science.</div></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
