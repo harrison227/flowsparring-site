@@ -1,5 +1,5 @@
 // ===========================
-// Flow Sparring — Site Logic
+// Flow Sparring, Site Logic
 // ===========================
 
 (function () {
@@ -55,7 +55,7 @@
       const success = form.querySelector('.form-success');
       if (success) {
         success.classList.add('show');
-        success.textContent = "Thanks — we'll be in touch within 24 hours.";
+        success.textContent = "Thanks, we'll be in touch within 24 hours.";
       }
       form.reset();
       setTimeout(() => success && success.classList.remove('show'), 6000);
