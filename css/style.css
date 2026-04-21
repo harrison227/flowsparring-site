@@ -67,32 +67,32 @@ ul { list-style: none; }
 .display-mega {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(3rem, 11vw, 9rem);
-  line-height: 0.88;
+  font-size: clamp(2.75rem, 8vw, 6rem);
+  line-height: 0.95;
   letter-spacing: -0.005em;
   text-transform: uppercase;
 }
 
 .display-xl {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 7vw, 5.5rem);
-  line-height: 0.92;
+  font-size: clamp(2.5rem, 6.5vw, 5rem);
+  line-height: 0.98;
   text-transform: uppercase;
   letter-spacing: 0.005em;
 }
 
 .display-lg {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 0.95;
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
 
 .display-md {
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  line-height: 1;
+  font-size: clamp(1.65rem, 2.8vw, 2.25rem);
+  line-height: 1.05;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
@@ -295,7 +295,7 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
 /* ---- Hero (split layout) ---- */
 .hero {
   position: relative;
-  padding: 11rem 0 4rem;
+  padding: 8rem 0 3rem;
   overflow: hidden;
   background: var(--bg);
 }
@@ -368,8 +368,8 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
   content: '';
   position: absolute;
   inset: auto 0 0 0;
-  height: 45%;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.55));
+  height: 35%;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.35));
   pointer-events: none;
   z-index: 1;
 }
@@ -377,12 +377,10 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) contrast(1.08);
-  transition: transform 0.8s var(--ease), filter 0.6s var(--ease);
+  transition: transform 0.8s var(--ease);
 }
 .hero-visual:hover .hero-photo {
   transform: scale(1.04);
-  filter: grayscale(30%) contrast(1.1);
 }
 
 /* Floating CTA badge on hero photo */
@@ -457,23 +455,22 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
   width: 100%;
   height: 100%;
   border: 0;
-  filter: grayscale(100%) contrast(1.05);
 }
 
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 2rem;
-  margin-top: 4rem;
-  padding-top: 2.5rem;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
   border-top: 1px solid var(--border);
 }
 .hero-stat-num {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
   color: var(--fg);
   line-height: 1;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 .hero-stat-num .plus { color: var(--fg-subtle); }
 .hero-stat-label {
@@ -506,7 +503,6 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) contrast(1.05);
 }
 
 /* ---- Feature grid ---- */
@@ -598,11 +594,9 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
   width: 100%; height: 100%;
   object-fit: cover;
   transition: transform 0.7s var(--ease);
-  filter: grayscale(100%) contrast(1.05);
 }
 .class-card:hover .class-card-image img {
   transform: scale(1.05);
-  filter: grayscale(30%) contrast(1.08);
 }
 .class-card-body {
   padding: 1.75rem 1.75rem 2rem;
@@ -667,7 +661,6 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
 .split-image img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) contrast(1.05);
 }
 .split-text h2 { margin-bottom: 1.5rem; }
 .split-text p { margin-bottom: 1.25rem; color: var(--fg-muted); }
@@ -988,11 +981,9 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
 .coach-card-image img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) contrast(1.05);
-  transition: filter 0.5s var(--ease), transform 0.6s var(--ease);
+  transition: transform 0.6s var(--ease);
 }
 .coach-card:hover .coach-card-image img {
-  filter: grayscale(30%) contrast(1.08);
   transform: scale(1.04);
 }
 .coach-card-body {
@@ -1107,7 +1098,6 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 21px; transform: rotate(-45d
 .map-wrap iframe {
   width: 100%; height: 100%;
   border: 0;
-  filter: grayscale(100%) contrast(1.05);
 }
 
 /* ---- Method / Philosophy items ---- */
